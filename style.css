@@ -1,0 +1,165 @@
+div.up {
+    position: absolute;
+    width: 50px;
+    height: 0px;
+    left: 50%;
+    transition: all 1s;
+}
+
+div.down {
+    position: absolute;
+    width: 50px;
+    height: 0px;
+    left: 50%;
+    top: 50px;
+    transition: all 1s;
+}
+
+div.right {
+    position: absolute;
+    width: 50px;
+    height: 0px;
+    left: 50%;
+    margin-left: 50px;
+    top: 50px;
+    transition: all 1s;
+
+}
+
+div.left {
+    position: absolute;
+    width: 50px;
+    height: 0px;
+    left: 50%;
+    margin-left: -50px;
+    top: 50px;
+    transition: all 1s;
+}
+
+
+.mainObj{
+  position: absolute;
+  top: 100px;
+  left:50%;
+  width:300px;
+  height: 300px;
+  transition: all 2s;
+
+}
+
+
+.front {
+    background: url('images/straight.png');
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 300px;
+    height: 300px;
+    display: inline;
+}
+
+
+
+.uproll {
+    background: url('images/Up.png');
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 300px;
+    height: 300px;
+    animation: upRoll 0.58s steps(15) 1;
+    display: none;
+}
+
+
+.downroll {
+    background: url(images/Down.png);
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 300px;
+    height: 300px;
+    animation: downRoll 0.58s steps(15) 1;
+    display: none;
+
+}
+
+
+.leftroll {
+    background: url(images/Left.png);
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 300px;
+    height: 300px;
+    animation: leftRoll 0.58s steps(14) 1;
+    display: none;
+}
+
+
+
+.rightroll {
+    background: url(images/Right.png);
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 300px;
+    height: 300px;
+    animation: rightRoll 0.58s steps(14) 1;
+    display: none;
+}
+
+
+
+
+body {
+    height: 800px;
+    background: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%) no-repeat;
+
+}
+
+@keyframes faceForward {
+    0% {
+        background-position: 0px 0px;
+    }
+}
+
+@keyframes downRoll {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: 4500px;
+    }
+}
+
+@keyframes leftRoll {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: 4200px;
+    }
+}
+
+@keyframes rightRoll {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: 4200px;
+    }
+}
+
+@keyframes upRoll {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: 4500px;
+    }
+}
