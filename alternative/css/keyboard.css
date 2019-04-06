@@ -1,0 +1,37 @@
+#arrows {
+    position: absolute;
+    width: 150px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#arrows .arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transition: all 1s;
+    transform: translateX(-50%);
+}
+
+#arrows .up {
+    left: 50%;
+    top: 8px;
+}
+
+#arrows .down {
+    left: 50%;
+    top: 50px;
+}
+
+#arrows .right {
+    left: 50%;
+    margin-left: 50px;
+    top: 50px;
+}
+
+#arrows .left {
+    left: 50%;
+    margin-left: -50px;
+    top: 50px;
+}

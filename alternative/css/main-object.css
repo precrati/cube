@@ -1,0 +1,90 @@
+.mainObj {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    top: 50%;
+    width: 300px;
+    height: 300px;
+    transition: all 2s;
+    transform: translate(-50%, -50%);
+}
+
+.mainObj > div {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 300px;
+    height: 300px;
+    display: none;
+}
+
+.mainObj .front {
+    display: block;
+    background: url('../../images/straight.png');
+}
+
+.mainObj .uproll {
+    background: url('../../images/Up.png');
+    animation: upRoll 0.58s steps(15) 1;
+}
+
+.mainObj .downroll {
+    background: url(../../images/Down.png);
+    animation: downRoll 0.58s steps(15) 1;
+}
+
+.mainObj .leftroll {
+    background: url(../../images/Left.png);
+    animation: leftRoll 0.58s steps(14) 1;
+}
+
+.mainObj .rightroll {
+    background: url(../../images/Right.png);
+    animation: rightRoll 0.58s steps(14) 1;
+}
+
+@keyframes faceForward {
+    0% {
+        background-position: 0px 0px;
+    }
+}
+
+@keyframes downRoll {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: 4500px;
+    }
+}
+
+@keyframes leftRoll {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: 4200px;
+    }
+}
+
+@keyframes rightRoll {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: 4200px;
+    }
+}
+
+@keyframes upRoll {
+    0% {
+        background-position: 0px;
+    }
+
+    100% {
+        background-position: 4500px;
+    }
+}
