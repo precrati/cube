@@ -6,7 +6,7 @@ function animateArrow(arrowObj, tmpRule, tmpValue) {
     setTimeout(function() {
         arrowObj.style.opacity = 1;
         arrowObj.style[tmpRule] = 0;
-    }, 300);
+    }, 200);
 }
 
 function animiateArrows(event) {

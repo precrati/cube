@@ -5,7 +5,7 @@
     top: 50%;
     width: 300px;
     height: 300px;
-    transition: all 2s;
+    transition: all 0.58s cubic-bezier(.42, 0, 1, 1);
     transform: translate(-50%, -50%);
 }
 
@@ -24,22 +24,22 @@
 }
 
 .mainObj .uproll {
-    background: url('../../images/Up.png');
+    background: url('../../images/Down.png');
     animation: upRoll 0.58s steps(15) 1;
 }
 
 .mainObj .downroll {
-    background: url(../../images/Down.png);
+    background: url(../../images/Up.png);
     animation: downRoll 0.58s steps(15) 1;
 }
 
 .mainObj .leftroll {
-    background: url(../../images/Left.png);
+    background: url(../../images/Right.png);
     animation: leftRoll 0.58s steps(14) 1;
 }
 
 .mainObj .rightroll {
-    background: url(../../images/Right.png);
+    background: url(../../images/Left.png);
     animation: rightRoll 0.58s steps(14) 1;
 }
 
