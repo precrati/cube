@@ -17,8 +17,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var squareLeft = document.getElementById('squareLeft');
     var squareRight = document.getElementById('squareRight');
     var mainObject = document.getElementById('mainObjec');
+    var controller = document.getElementById('controll');
     var left = 0;
-    step = 20;
+    var top = 0;
+    var right = 0;
+    var down = 0;
+        step = 20;
 
 
 
@@ -29,24 +33,28 @@ document.addEventListener("DOMContentLoaded", function() {
             objectUp.style.marginTop = -2 + 'px';
             squareDown.style.display = "inline";
             squareStraight.style.display = "none";
+            mainObject.style.transform += "translateY(-100px)";
 
         } else if (key == arrowDown) {
             objectDown.style.opacity = 0.8;
             objectDown.style.marginTop = 2 + 'px';
             squareUp.style.display = "inline";
             squareStraight.style.display = "none";
+            down += step;
+            mainObject.style.transform += "translateY(100px)";
+
         } else if (key == arrowLeft) {
             objectLeft.style.opacity = 0.8;
             squareRight.style.display = "inline";
             squareStraight.style.display = "none";
-            /*objectLeft.style.marginLeft = -2 + 'px'; */
+            left += step;
+            mainObject.style.transform += "translateX(-100px)";
         } else if (key == arrowRight) {
             objectRight.style.opacity = 0.8;
             objectRight.style.paddingRight = 2 + 'px';
             squareLeft.style.display = "inline";
             squareStraight.style.display = "none";
-
-            // Не пойму почему не работает
+            mainObject.style.transform +1= "translateX(100px)";
             objectLeft.style.paddingRight = 2 + 'px';
         }
     }
@@ -66,5 +74,17 @@ document.addEventListener("DOMContentLoaded", function() {
         squareRight.style.display = "none";
         squareLeft.style.display = "none";
     }
+
+
+//ВЕРНУСЬ ПОЗЖЕ
+
+/*var positionElement;
+    for (var i = 100; i <= 100; i++) {
+        document.mainObject.onkeydown {
+            mainObject.style.transform += "translateY(i + "px")";
+        }
+    }*/
+
+
 
 });
